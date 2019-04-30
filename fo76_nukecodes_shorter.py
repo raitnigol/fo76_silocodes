@@ -7,7 +7,7 @@ import requests; import json
 r = requests.get('https://nukacrypt.com/codes.json')
 j = json.loads(r.content)
 
-# print the outcome 
+# print the outcome in three lines (alpha, bravo and charlie)
 
 print("Site Alpha nuke code: " + j['alpha'])
 print("Site Bravo nuke code: " + j['bravo'])
