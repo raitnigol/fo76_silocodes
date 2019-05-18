@@ -1,6 +1,3 @@
-$codes = Invoke-RestMethod -Uri "https://nukacrypt.com/codes.json?r="
+$codes = Invoke-RestMethod -Uri "nukacrypt.com/codes.json"
 
-ForEach ($silo in $codes) {
-    $alpha = $silo.alpha; $bravo = $silo.bravo; $charlie = $silo.charlie }
-
-Write-Host "Alpha: $alpha`nBravo: $bravo`nCharlie: $charlie"
+Write-Host Alpha: $codes.alpha`nBravo: $codes.bravo`nCharlie: $codes.charlie
