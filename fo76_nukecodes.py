@@ -1,9 +1,8 @@
-# import requests and json to pull info from nukacrpyt json file 
+# import requests and json to pull info from nukacrpyt json file
 import requests
 import json
 # get the request from nukacrypt and load the content
-r = requests.get('https://nukacrypt.com/codes.json')
-j = json.loads(r.content)
+j = json.loads(requests.get('https://nukacrypt.com/codes.json').content)
 
 # print the outcome 
 print("Site Alpha nuke code: " + j['alpha'])
